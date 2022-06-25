@@ -39,7 +39,7 @@ public class StudentConfig {
             );
 
             repository.saveAll(
-                    List.of(austine, john, bayo)
+                    List.of(austine, john, bayo, ronke)
             );
         };
     }
