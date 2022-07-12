@@ -30,8 +30,8 @@ public class GFG {
         //String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,}$";
 
             // String regex = "\\b([a-zA-Z0-9])\\1+\\b";
-            String regex = "^(?!.*([a-zA-Z@#$%^&-+=()])\\1)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,}$";
-
+            String regex = "^(?!.*([a-zA-Z0-9@#$%^&-+=()])\\1)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,}$";
+            //String regex = "^(?!.*(\\d)\\1)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,}$";
  
 
         // Compile the ReGex
@@ -79,7 +79,7 @@ public class GFG {
 
         // Test Case 1:
 
-        String str1 = "aSonaUax#@";
+        String str1 = "aSonauax#@";
 
         System.out.println(
 
