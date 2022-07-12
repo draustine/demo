@@ -76,50 +76,22 @@ public class GFG {
 
     {
  
-
-        // Test Case 1:
-
-        String str1 = "aSonauax#@";
-
-        System.out.println(
-
-            isIdentical(str1));
- 
-
-        // Test Case 2:
-
-        String str2 = "xOun35yt#eda";
-
-        System.out.println(
-
-            isIdentical(str2));
- 
-
-        // Test Case 3:
-
-        String str3 = "Zaonu3#";
-
-        System.out.println(
-
-            isIdentical(str3));
- 
-
-        // Test Case 4:
-
-        String str4 = "abc";
-
-        System.out.println(
-
-            isIdentical(str4));
- 
-
-        // Test Case 5:
-
-        String str5 = "aa";
-
-        System.out.println(
-
-            isIdentical(str5));
-
+        String str = null;
+        // Test until string == null
+        Scanner input = new Scanner(System.in);
+        while (true) {
+            System.out.println("Enter a string");
+            str = input.nextLine();
+            if (str == null) {
+                break;
+            }
+            if (isIdentical(str)) {
+                System.out.println("String is valid");
+            } else {
+                System.out.println("String is invalid");
+            }
+        }
+        
+        
     }
 }
