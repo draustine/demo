@@ -5,6 +5,7 @@
  
 
 import java.util.regex.*;
+import java.util.Scanner;
 
 public class GFG {
  
@@ -17,28 +18,15 @@ public class GFG {
 
     // using regular expression
 
-    public static boolean isIdentical(String str)
+    public static boolean isIdentical(String str) {
 
-    {
-
-        // Regex to check three or
-
-        // more consecutive identical
-
-        // characters or numbers
-
-        //String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,}$";
-
-            // String regex = "\\b([a-zA-Z0-9])\\1+\\b";
-            String regex = "^(?!.*([a-zA-Z0-9@#$%^&-+=()])\\1)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,}$";
-            //String regex = "^(?!.*(\\d)\\1)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,}$";
- 
+       
+        // String regex = "^(?!.*([a-zA-Z0-9@#$%^&-+=()])\\1)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,}$";
+        String regex = "^[\\d]{11}$|^[\\d]{10}$";
 
         // Compile the ReGex
 
-        Pattern p
-
-            = Pattern.compile(regex);
+        Pattern p = Pattern.compile(regex);
  
 
         // If the string is empty
